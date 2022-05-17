@@ -2,24 +2,54 @@
 :root {
     --primario: #274060;
     --secundario: #335C81;
+    --claro1: #65AFFF;
+    --claro2: #5899E2;
 
 }
 
 body{
     font-family: "Roboto" , Helvetica, sans-serif;
+    margin: 0;
 }
 
 
 .inicio {
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: .5rem;
+    margin-top: .6rem;
 }
 
 .busqueda {
     display: flex;
     justify-content: center;
     background-color: var(--primario);
+    padding: .6rem;
+
+}
+.busqueda input{
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    width: 40%;
+    color: #1B2845;
+}
+.busqueda input:focus{
+    outline: none;
+}
+.busqueda button{
+    border: var(--primario) solid;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: .15rem solid var(--primario);
+    border-radius: 0px 5px 5px 0px;
+    background-color: white;
+    background-image: url('./medias/lupa.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    width: 3rem;
+    height: 1.5rem;
 
 }
 
@@ -33,13 +63,25 @@ body{
     border-radius: 3rem;
     padding: 0.2rem 1.5rem;
     color: white;
+    margin-left: 1rem;
+    font-weight: 600;
+    transition:  background-color ease-out .2s;
+    /* box-shadow: .1rem .2rem .2rem rgb(34, 34, 34,.4); */
+}
+.btn-menu:hover{
+    background-color: var(--claro1);
+    cursor: pointer;
+    /* color: var(--primario); */
 }
 .btn-perfil{
-    background-color: var(--secundario);
+    /* background-color: var(--secundario); */
+    background-image:url('medias/user.svg');
+    background-position: center;
+    background-size: cover;
+    width: 2.5rem;
+    background-color: white;
     border: none;
-    border-radius: 3rem;
-    padding: 0.2rem 1.5rem;
-    color: white;
+    margin-right: 1rem;
 }
 .colors {
     color: #335C81;
