@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 :root {
     --primario: #274060;
     --secundario: #335C81;
 
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body{
     font-family: "Roboto" , Helvetica, sans-serif;
