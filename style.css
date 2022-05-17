@@ -1,0 +1,24 @@
+.grid{
+    display: grid;
+    grid-template-rows: 100px 100px 200px;
+}
+.header{
+    grid-row:1/2;
+    grid-column: 1/12;
+    border: 3px solid;
+}
+.busqueda{
+    grid-row:2/3;
+    grid-column: 1/12;
+    border: 2px solid;
+}
+.box_1{
+    grid-row:3/20;
+    grid-column: 1/12;
+    border: 2px solid;
+}
+.box_2{
+    grid-row:20/25;
+    grid-column: 1/12;
+    border: 2px solid;
+}
