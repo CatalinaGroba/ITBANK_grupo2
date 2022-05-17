@@ -90,3 +90,59 @@ body{
     color: #1B2845;
     color: #5899E2;
 }
+.box-botones{
+    width: 800px;
+    height: 120px;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30rem;
+    margin-left: 20rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-radius: 5px;
+    box-shadow: -3px 3px 11px #74819d;
+}
+.btn-transferencia{
+    background-image: url('medias/Group\ 2.svg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border: none;
+    background-position: center;
+    background-color: white;
+}
+.btn-resumen{
+    background-image: url('medias/Group\ 3.svg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border: none;
+    background-position: center;
+    background-color: white;
+}
+.btn-pago-serivicios{
+    background-image: url('medias/Group\ 28.svg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border: none;
+    background-position: center;
+    background-color: white;  
+}
+.btn-prestamos{
+    background-image: url('medias/Group\ 29.svg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border: none;
+    background-position: center;
+    background-color: white;  
+} 
