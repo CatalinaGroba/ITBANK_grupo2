@@ -1,24 +1,50 @@
-.grid{
-    display: grid;
-    grid-template-rows: 100px 100px 200px;
+:root {
+    --primario: #274060;
+    --secundario: #335C81;
+
 }
-.header{
-    grid-row:1/2;
-    grid-column: 1/12;
-    border: 3px solid;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    font-family: "Roboto" , Helvetica, sans-serif;
 }
-.busqueda{
-    grid-row:2/3;
-    grid-column: 1/12;
-    border: 2px solid;
+
+
+.inicio {
+    display: flex;
+    justify-content: space-between;
+
 }
-.box_1{
-    grid-row:3/20;
-    grid-column: 1/12;
-    border: 2px solid;
+
+.busqueda {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primario);
+
 }
-.box_2{
-    grid-row:20/25;
-    grid-column: 1/12;
-    border: 2px solid;
+
+.logo-itbank {
+    width: 15rem;
+
+}
+.btn-menu{
+    background-color: var(--secundario);
+    border: none;
+    border-radius: 3rem;
+    padding: 0.2rem 1.5rem;
+    color: white;
+}
+.btn-perfil{
+    background-color: var(--secundario);
+    border: none;
+    border-radius: 3rem;
+    padding: 0.2rem 1.5rem;
+    color: white;
+}
+.colors {
+    color: #335C81;
+    color: #274060;
+    color: #65AFFF;
+    color: #1B2845;
+    color: #5899E2;
 }
