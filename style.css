@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 :root {
     --primario: #274060;
     --secundario: #335C81;
@@ -7,9 +8,10 @@
 
 }
 
-body{
-    font-family: "Roboto" , Helvetica, sans-serif;
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
     margin: 0;
+    height: 100vh;
 }
 
 
@@ -27,34 +29,41 @@ body{
     padding: .6rem;
 
 }
-.busqueda input{
+
+.busqueda input {
     border: none;
     border-radius: 5px 0px 0px 5px;
     width: 40%;
     color: #1B2845;
 }
-.busqueda input:focus{
+
+.busqueda input:focus {
     outline: none;
 }
+
 /* menu  de la izquierda por augusto */
-#btn-menu{
+#btn-menu {
     display: none;
 }
-.container-menu{
+
+.container-menu {
     position: absolute;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100vh;
-    top: 0;left: 0;
+    top: 0;
+    left: 0;
     transition: all 500ms ease;
     opacity: 0;
     visibility: hidden;
 }
-#btn-menu:checked ~ .container-menu{
+
+#btn-menu:checked~.container-menu {
     opacity: 1;
     visibility: visible;
 }
-.cont-menu{
+
+.cont-menu {
     width: 100%;
     max-width: 250px;
     background: #1c1c1c;
@@ -63,13 +72,16 @@ body{
     transition: all 500ms ease;
     transform: translateX(-100%);
 }
-#btn-menu:checked ~ .container-menu .cont-menu{
+
+#btn-menu:checked~.container-menu .cont-menu {
     transform: translateX(0%);
 }
-.cont-menu nav{
+
+.cont-menu nav {
     transform: translateY(15%);
 }
-.cont-menu nav a{
+
+.cont-menu nav a {
     display: block;
     text-decoration: none;
     padding: 20px;
@@ -77,11 +89,13 @@ body{
     border-left: 5px solid transparent;
     transition: all 400ms ease;
 }
-.cont-menu nav a:hover{
+
+.cont-menu nav a:hover {
     border-left: 5px solid #c7c7c7;
     background: #1f1f1f;
 }
-.cont-menu label{
+
+.cont-menu label {
     position: absolute;
     right: 5px;
     top: 10px;
@@ -97,7 +111,7 @@ body{
 
 
 /* fin del menu */
-.busqueda button{
+.busqueda button {
     border: var(--primario) solid;
     border-top: none;
     border-bottom: none;
@@ -118,7 +132,8 @@ body{
     width: 15rem;
 
 }
-.btn-menu{
+
+.btn-menu {
     background-color: var(--secundario);
     border: none;
     border-radius: 3rem;
@@ -126,17 +141,19 @@ body{
     color: white;
     margin-left: 1rem;
     font-weight: 600;
-    transition:  background-color ease-out .2s;
+    transition: background-color ease-out .2s;
     /* box-shadow: .1rem .2rem .2rem rgb(34, 34, 34,.4); */
 }
-.btn-menu:hover{
+
+.btn-menu:hover {
     background-color: var(--claro1);
     cursor: pointer;
     /* color: var(--primario); */
 }
-.btn-perfil{
+
+.btn-perfil {
     /* background-color: var(--secundario); */
-    background-image:url('medias/user.svg');
+    background-image: url('medias/user.svg');
     background-position: center;
     background-size: cover;
     width: 2.5rem;
@@ -144,6 +161,7 @@ body{
     border: none;
     margin-right: 1rem;
 }
+
 .colors {
     color: #335C81;
     color: #274060;
@@ -151,7 +169,8 @@ body{
     color: #1B2845;
     color: #5899E2;
 }
-.box-botones{
+
+.box-botones {
     width: 800px;
     height: 120px;
     background-color: none;
@@ -167,7 +186,8 @@ body{
     border-radius: 5px;
     box-shadow: -3px 3px 11px #74819d;
 }
-.btn-transferencia{
+
+.btn-transferencia {
     background-image: url('medias/Group\ 2.svg');
     background-repeat: no-repeat;
     height: 70px;
@@ -177,7 +197,8 @@ body{
     background-position: center;
     background-color: white;
 }
-.btn-resumen{
+
+.btn-resumen {
     background-image: url('medias/Group\ 3.svg');
     background-repeat: no-repeat;
     height: 70px;
@@ -187,7 +208,8 @@ body{
     background-position: center;
     background-color: white;
 }
-.btn-pago-serivicios{
+
+.btn-pago-serivicios {
     background-image: url('medias/Group\ 28.svg');
     background-repeat: no-repeat;
     height: 70px;
@@ -195,9 +217,10 @@ body{
     background-size: cover;
     border: none;
     background-position: center;
-    background-color: white;  
+    background-color: white;
 }
-.btn-prestamos{
+
+.btn-prestamos {
     background-image: url('medias/Group\ 29.svg');
     background-repeat: no-repeat;
     height: 70px;
@@ -205,5 +228,33 @@ body{
     background-size: cover;
     border: none;
     background-position: center;
-    background-color: white;  
-} 
+    background-color: white;
+}
+
+footer {
+    height: 10%;
+    background-color: var(--primario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    width: 20%;
+    height: 40%;
+    font-size: 28px;
+    color: white;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-evenly;
+
+}
+.itbank-footer{
+font-size: 15px;
+color: white;
+padding-top: 10px;
+text-decoration: none;
+}
