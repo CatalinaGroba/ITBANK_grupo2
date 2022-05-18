@@ -18,7 +18,32 @@
     border: 2px solid;
 }
 .box_2{
-    grid-row:20/25;
+    grid-row: 20/25;
     grid-column: 1/12;
     border: 2px solid;
+}
+
+.card {
+    border-radius: 16px !important;
+}
+
+/* .card-img-top {
+    width: 100% !important;
+    height: 15vw !important;
+    object-fit: cover !important;
+} */
+
+.btn-itba,
+.btn-itba:hover,
+.btn-itba:active,
+.btn-itba:visited,
+.btn-itba:focus {
+    background-color: #335C81 !important;
+    border-color: #335C81 !important;
+    color: white !important;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
 }
