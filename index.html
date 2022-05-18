@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>ITBANK</title>
 </head>
+
 <body>
-    <header>
-        <button>menu</button>
-        <img src="./Marca-ITBA-Color-ALTA.png" alt="" class="logo-itbank" id="inicio" >
-        <button>perfil</button>
+    <header class="header">
+        <div class="inicio">
+            <button class="btn-menu">MENU</button>
+            <img src="./medias/LogoItbank.jpeg" alt="" class="logo-itbank" id="inicio">
+            <button class="btn-perfil"></button>
+        </div>
+
         <nav class="busqueda">
             <input type="text">
-            <button>lupa</button>
+            <button></button>
         </nav>
     </header>
     <main>
         <section>
             <article class="tarjeta">
-                <h2>Visa xxx</h2>
+                <h2>VISA xxx</h2>
                 <p>ultimos consumos</p>
                 <p>cierre</p>
                 <h3>$0.00</h3>
@@ -28,13 +33,28 @@
             </article>
             <img src="" alt="">
         </section>
-        <section>
-            <div>
-                <button>transferencias</button>
-                <button>resumen bancario</button>
-                <button>tarjetas</button>
-                <button>paga tus servicios</button>
-                <button>prestamos</button>
+        <section class="iconos">
+            <div class="box-botones">
+                <div class="btn">
+                    <button class="btn-transferencia"></button>
+                    <h3>Transferencias</h3>
+                </div>
+                <div class="btn">
+                    <button class="btn-resumen"></button>
+                    <h3>Resumen Bancario</h3>
+                </div>
+                <div class="btn">
+                    <button class="btn-qr"></button>
+                    <h3>Codigo Qr</h3>
+                </div>
+                <div class="btn">
+                    <button class="btn-pago-serivicios"></button>
+                    <h3>Pago de Servicios</h3>
+                </div>
+                <div class="btn">
+                    <button class="btn-prestamos"></button>
+                    <h3>Prestamos</h3>
+                </div>
             </div>
         </section>
         <section>
@@ -64,4 +84,5 @@
 
 
 </body>
+
 </html>

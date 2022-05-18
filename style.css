@@ -1,24 +1,166 @@
-.grid{
-    display: grid;
-    grid-template-rows: 100px 100px 200px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root {
+    --primario: #274060;
+    --secundario: #335C81;
+    --claro1: #65AFFF;
+    --claro2: #5899E2;
+
 }
-.header{
-    grid-row:1/2;
-    grid-column: 1/12;
-    border: 3px solid;
+
+body{
+    font-family: "Roboto" , Helvetica, sans-serif;
+    margin: 0;
 }
-.busqueda{
-    grid-row:2/3;
-    grid-column: 1/12;
-    border: 2px solid;
+
+
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    margin-top: .6rem;
 }
-.box_1{
-    grid-row:3/20;
-    grid-column: 1/12;
-    border: 2px solid;
+
+.busqueda {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primario);
+    padding: .6rem;
+
 }
-.box_2{
-    grid-row:20/25;
-    grid-column: 1/12;
-    border: 2px solid;
+.busqueda input{
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    width: 40%;
+    color: #1B2845;
+}
+.busqueda input:focus{
+    outline: none;
+}
+.busqueda button{
+    border: var(--primario) solid;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: .15rem solid var(--primario);
+    border-radius: 0px 5px 5px 0px;
+    background-color: white;
+    background-image: url('./medias/lupa.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    width: 3rem;
+    height: 1.5rem;
+
+}
+
+.logo-itbank {
+    width: 15rem;
+
+}
+.btn-menu{
+    background-color: var(--secundario);
+    border: none;
+    border-radius: 3rem;
+    padding: 0.2rem 1.5rem;
+    color: white;
+    margin-left: 1rem;
+    font-weight: 600;
+    transition:  background-color ease-out .2s;
+    /* box-shadow: .1rem .2rem .2rem rgb(34, 34, 34,.4); */
+}
+.btn-menu:hover{
+    background-color: var(--claro1);
+    cursor: pointer;
+    /* color: var(--primario); */
+}
+.btn-perfil{
+    /* background-color: var(--secundario); */
+    background-image:url('medias/user.svg');
+    background-position: center;
+    background-size: cover;
+    width: 2.5rem;
+    background-color: white;
+    border: none;
+    margin-right: 1rem;
+}
+.colors {
+    color: #335C81;
+    color: #274060;
+    color: #65AFFF;
+    color: #1B2845;
+    color: #5899E2;
+}
+.iconos {
+    display: flex;
+    justify-content: center;
+}
+.box-botones{
+    width: 800px;
+    height: 150px;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-radius: 5px;
+    box-shadow: -3px 3px 11px #74819d;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto" , Helvetica, sans-serif;
+}
+.btn-transferencia{
+    background-image: url('medias/Group\ 2.svg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border: none;
+    background-position: center;
+    background-color: white;
+}
+.btn-resumen{
+    background-image: url('medias/Group\ 3.svg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border: none;
+    background-position: center;
+    background-color: white;
+}
+.btn-pago-serivicios{
+    background-image: url('medias/Group\ 28.svg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border: none;
+    background-position: center;
+    background-color: white;  
+}
+.btn-prestamos{
+    background-image: url('medias/Group\ 29.svg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border: none;
+    background-position: center;
+    background-color: white;  
+} 
+.btn-qr{
+    background-image: url('medias/Group\ 25.svg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border: none;
+    background-position: center;
+    background-color: white;  
 }
