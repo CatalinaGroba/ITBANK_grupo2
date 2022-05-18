@@ -343,3 +343,13 @@ color: white;
 padding-top: 10px;
 text-decoration: none;
 }
+.btn-qr{
+    background-image: url('medias/Group\ 25.svg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border: none;
+    background-position: center;
+    background-color: white;  
+}
