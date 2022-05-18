@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>ITBANK</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
-    <header>
-        <button>menu</button>
-        <img src="./Marca-ITBA-Color-ALTA.png" alt="" class="logo-itbank" id="inicio" >
-        <button>perfil</button>
+    <header class="header">
+        <div class="inicio">
+            
+                <label for="btn-menu" class="btn-menu">menu</label>           
+        
+            <img src="./medias/LogoItbank.jpeg" alt="" class="logo-itbank" id="inicio">
+            <button class="btn-perfil"></button>
+        </div>
+
         <nav class="busqueda">
             <input type="text">
-            <button>lupa</button>
+            <button></button>
         </nav>
     </header>
+    <!-- menu -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="#">Opcion 1</a>
+                <a href="#">Opcion 2</a>
+                <a href="#">Opcion 3</a>
+                <a href="#">Opcion 4</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+    <!-- menu fin -->
     <main>
         <section>
             <article class="tarjeta">
-                <h2>Visa xxx</h2>
+                <h2>VISA xxx</h2>
                 <p>ultimos consumos</p>
                 <p>cierre</p>
                 <h3>$0.00</h3>
@@ -30,12 +51,12 @@
             <img src="" alt="">
         </section>
         <section>
-            <div>
-                <button>transferencias</button>
-                <button>resumen bancario</button>
+            <div class="box-botones">
+                <button class="btn-transferencia"></button>
+                <button class="btn-resumen"></button>
                 <button>tarjetas</button>
-                <button>paga tus servicios</button>
-                <button>prestamos</button>
+                <button class="btn-pago-serivicios"></button>
+                <button class="btn-prestamos"></button>
             </div>
         </section>
         <section class="d-flex flex-md-row mx-lg-2 justify-content-lg-around flex-md-wrap flex-column">
@@ -77,4 +98,5 @@
         <a href="#inicio">ITBANK©️</a>
     </footer>
 </body>
+
 </html>
