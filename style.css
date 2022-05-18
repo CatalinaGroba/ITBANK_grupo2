@@ -8,13 +8,10 @@
 
 }
 
-body {
-    font-family: "Roboto", Helvetica, sans-serif;
-    margin: 0;
-    height: 100vh;
-}
-
-
+/* .body{
+    margin-left: 5rem;
+    margin-right: 5rem ;
+} */
 .inicio {
     display: flex;
     justify-content: space-between;
@@ -213,6 +210,7 @@ body {
 }
 
 .box-botones{
+    
     width: 800px;
     height: 150px;
     background-color: none;
@@ -221,7 +219,8 @@ body {
     padding-left: 4rem;
     padding-right: 4rem;
     padding-bottom: 4rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
     padding-top: 2rem;
     border-radius: 5px;
     box-shadow: -3px 3px 11px #74819d;
@@ -271,30 +270,7 @@ body {
     background-position: center;
     background-color: white;  
 } 
-.grid{
-    display: grid;
-    grid-template-rows: 100px 100px 200px;
-}
-.header{
-    grid-row:1/2;
-    grid-column: 1/12;
-    border: 3px solid;
-}
-.busqueda{
-    grid-row:2/3;
-    grid-column: 1/12;
-    border: 2px solid;
-}
-.box_1{
-    grid-row:3/20;
-    grid-column: 1/12;
-    border: 2px solid;
-}
-.box_2{
-    grid-row: 20/25;
-    grid-column: 1/12;
-    border: 2px solid;
-}
+
 
 .card {
     border-radius: 16px !important;
