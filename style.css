@@ -189,7 +189,6 @@
 .iconos {
     display: flex;
     justify-content: center;
-   
 }
 .contenedor{
     display: flex;
@@ -212,16 +211,13 @@
 .box-botones{
     
     width: 800px;
-    height: 150px;
+    height: 180px;
     background-color: none;
     display: flex;
     justify-content: space-between;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-bottom: 4rem;
     /* margin-top: 2rem; */
     margin-bottom: 2rem;
-    padding-top: 2rem;
+    padding: 2rem 4rem 4rem 4rem;
     border-radius: 5px;
     box-shadow: -3px 3px 11px #74819d;
     text-align: center;
