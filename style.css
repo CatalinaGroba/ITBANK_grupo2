@@ -299,6 +299,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: inherit;
+    bottom: 0;
+
 }
 
 .social-media {
