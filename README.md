@@ -1,5 +1,5 @@
 # ITBANK_grupo2
-## INTEGRANTES 
+### INTEGRANTES 
 *Pedraza Suray
 *Saleme Juan Ignacio
 *Pedro Soria
