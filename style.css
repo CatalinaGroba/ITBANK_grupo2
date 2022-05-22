@@ -164,21 +164,51 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-.box-tarjeta {
+.box-tarjeta1 {
     margin-left: 3rem;
-    margin-right: 3rem;
     display: flex;
-    height: 250px;
-    width: 400px;
+    height: 230px;
+    width: 365px;
     justify-content: flex-start;
     align-items: center;
     background-color: #fff;
     border-radius: 10%;
 }
-.tarjeta {
+.box-tarjeta2 {
+    margin-left: 3rem;
+    display: flex;
+    height: 230px;
+    width: 365px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10%;
+    background-color: gold;
+}
+.box-tarjeta3 {
+    margin-left: 3rem;
+    display: flex;
+    height: 230px;
+    width: 365px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10%;
+    background-color: black;
+}
+.tarjeta1 {
     border-left: 3rem;
     margin-left: 2rem;
     font-family: "Roboto" , Helvetica, sans-serif;
+}
+.tarjeta2 {
+    border-left: 3rem;
+    margin-left: 2rem;
+    font-family: "Roboto" , Helvetica, sans-serif;
+}
+.tarjeta3 {
+    border-left: 3rem;
+    margin-left: 2rem;
+    font-family: "Roboto" , Helvetica, sans-serif;
+    color: silver;
 }
 .colors {
     color: #335C81;
