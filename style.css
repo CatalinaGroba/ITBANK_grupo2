@@ -7,7 +7,13 @@
     --claro2: #5899E2;
 
 }
-
+.colors {
+    color: #335C81;
+    color: #274060;
+    color: #65AFFF;
+    color: #1B2845;
+    color: #5899E2;
+}
 /* .body{
     margin-left: 5rem;
     margin-right: 5rem ;
@@ -18,6 +24,24 @@
     margin-bottom: .5rem;
     margin-top: .5rem;
     padding: .6rem ;
+}
+#btn-menu {
+    display: none;
+}
+
+.logo-itbank {
+    width: 15rem;
+}
+
+.btn-perfil {
+    /* background-color: var(--secundario); */
+    background-image: url('medias/user.svg');
+    background-position: center;
+    background-size: cover;
+    width: 2.5rem;
+    background-color: white;
+    border: none;
+    margin-right: 1rem;
 }
 
 .busqueda {
@@ -37,11 +61,24 @@
 .busqueda input:focus {
     outline: none;
 }
+.busqueda button {
+    border: var(--primario) solid;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: .15rem solid var(--primario);
+    border-radius: 0px 5px 5px 0px;
+    background-color: white;
+    background-image: url('./medias/lupa.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 3rem;
+    height: 1.7rem;
+
+}
 
 /* menu  de la izquierda por augusto */
-#btn-menu {
-    display: none;
-}
+
 .container-menu{
     z-index: 1000;
     position: fixed;
@@ -101,30 +138,6 @@
     font-size: 18px;
 }
 
-
-/* fin del menu */
-.busqueda button {
-    border: var(--primario) solid;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: .15rem solid var(--primario);
-    border-radius: 0px 5px 5px 0px;
-    background-color: white;
-    background-image: url('./medias/lupa.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-
-    width: 3rem;
-    height: 1.7rem;
-
-}
-
-.logo-itbank {
-    width: 15rem;
-
-}
-
 .btn-menu{
     background-color: var(--secundario);
     border: none;
@@ -142,17 +155,8 @@
     cursor: pointer;
     /* color: var(--primario); */
 }
+/* fin del menu */
 
-.btn-perfil {
-    /* background-color: var(--secundario); */
-    background-image: url('medias/user.svg');
-    background-position: center;
-    background-size: cover;
-    width: 2.5rem;
-    background-color: white;
-    border: none;
-    margin-right: 1rem;
-}
 .parte-tarjetas {
     height: 25rem;
     position: relative;
@@ -179,13 +183,7 @@
     margin-left: 2rem;
     font-family: "Roboto" , Helvetica, sans-serif;
 }
-.colors {
-    color: #335C81;
-    color: #274060;
-    color: #65AFFF;
-    color: #1B2845;
-    color: #5899E2;
-}
+
 .iconos {
     display: flex;
     justify-content: center;
@@ -200,16 +198,7 @@
     background-size: cover;
 }
 
-.btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Roboto" , Helvetica, sans-serif;
-    /* width: 60px; */
-}
-
 .box-botones{
-    
     width: 800px;
     height: 180px;
     background-color: none;
@@ -221,6 +210,13 @@
     border-radius: 5px;
     box-shadow: -3px 3px 11px #74819d;
     text-align: center;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto" , Helvetica, sans-serif;
+    /* width: 60px; */
 }
 
 .btn-transferencia{
@@ -243,6 +239,17 @@
     border: none;
     background-position: center;
     background-color: white;
+}
+
+.btn-qr{
+    background-image: url('medias/Group\ 25.svg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border: none;
+    background-position: center;
+    background-color: white;  
 }
 
 .btn-pago-serivicios {
@@ -313,15 +320,4 @@ font-size: 15px;
 color: white;
 padding-top: 10px;
 text-decoration: none;
-}
-
-.btn-qr{
-    background-image: url('medias/Group\ 25.svg');
-    background-repeat: no-repeat;
-    height: 70px;
-    width: 70px;
-    background-size: cover;
-    border: none;
-    background-position: center;
-    background-color: white;  
 }
