@@ -104,11 +104,7 @@
 
 /* fin del menu */
 .busqueda button {
-    border: var(--primario) solid;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: .15rem solid var(--primario);
+    border: none none none .15rem solid var(--primario);
     border-radius: 0px 5px 5px 0px;
     background-color: white;
     background-image: url('./medias/lupa.svg');
@@ -135,17 +131,17 @@
     margin-left: 1rem;
     font-weight: 600;
     transition: background-color ease-out .2s;
-    /* box-shadow: .1rem .2rem .2rem rgb(34, 34, 34,.4); */
+    
 }
 
 .btn-menu:hover {
     background-color: var(--claro1);
     cursor: pointer;
-    /* color: var(--primario); */
+   
 }
 
 .btn-perfil {
-    /* background-color: var(--secundario); */
+   
     background-image: url('medias/user.svg');
     background-position: center;
     background-size: cover;
@@ -165,20 +161,51 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-.box-tarjeta {
+.box-tarjeta1 {
     margin-left: 3rem;
     display: flex;
-    height: 250px;
-    width: 400px;
+    height: 230px;
+    width: 365px;
     justify-content: flex-start;
     align-items: center;
     background-color: #fff;
     border-radius: 10%;
 }
-.tarjeta {
+.box-tarjeta2 {
+    margin-left: 3rem;
+    display: flex;
+    height: 230px;
+    width: 365px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10%;
+    background-color: gold;
+}
+.box-tarjeta3 {
+    margin-left: 3rem;
+    display: flex;
+    height: 230px;
+    width: 365px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10%;
+    background-color: black;
+}
+.tarjeta1 {
     border-left: 3rem;
     margin-left: 2rem;
     font-family: "Roboto" , Helvetica, sans-serif;
+}
+.tarjeta2 {
+    border-left: 3rem;
+    margin-left: 2rem;
+    font-family: "Roboto" , Helvetica, sans-serif;
+}
+.tarjeta3 {
+    border-left: 3rem;
+    margin-left: 2rem;
+    font-family: "Roboto" , Helvetica, sans-serif;
+    color: silver;
 }
 .colors {
     color: #335C81;
@@ -276,12 +303,6 @@
     border-radius: 16px !important;
 }
 
-/* .card-img-top {
-    width: 100% !important;
-    height: 15vw !important;
-    object-fit: cover !important;
-} */
-
 .btn-itba,
 .btn-itba:hover,
 .btn-itba:active,
@@ -354,3 +375,7 @@ footer {
     width: 40%;
     }
   }
+.ull{
+    list-style-type: ">";
+    color: white
+}
