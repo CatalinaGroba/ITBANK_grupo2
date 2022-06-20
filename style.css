@@ -151,6 +151,10 @@
     margin-right: 1rem;
 }
 
+.carousel-control {
+    width: 365px;
+}
+
 .parte-tarjetas {
     height: 25rem;
     position: relative;
@@ -163,56 +167,21 @@
     background-position: center center;
 }
 
-.box-tarjeta1 {
-    margin-left: 3rem;
+.box-tarjeta {
     display: flex;
+    margin-left: 2rem;
     height: 230px;
-    width: 365px;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 10%;
-}
-
-.box-tarjeta2 {
-    margin-left: 3rem;
-    display: flex;
-    height: 230px;
-    width: 365px;
+    width: 330px;
     justify-content: flex-start;
     align-items: center;
     border-radius: 10%;
-    background-color: gold;
 }
 
-.box-tarjeta3 {
-    margin-left: 3rem;
-    display: flex;
-    height: 230px;
-    width: 365px;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 10%;
-    background-color: black;
-}
-
-.tarjeta1 {
-    border-left: 3rem;
+.tarjeta {
+    /* border-left: 3rem; */
     margin-left: 2rem;
+    margin-right: 2rem;
     font-family: "Roboto", Helvetica, sans-serif;
-}
-
-.tarjeta2 {
-    border-left: 3rem;
-    margin-left: 2rem;
-    font-family: "Roboto", Helvetica, sans-serif;
-}
-
-.tarjeta3 {
-    border-left: 3rem;
-    margin-left: 2rem;
-    font-family: "Roboto", Helvetica, sans-serif;
-    color: silver;
 }
 
 .colors {
@@ -354,7 +323,7 @@ footer {
 }
 
 .logo-footer {
-    width: 8rem;
+    width: 6rem;
     padding-top: 15px;
     padding-bottom: 10px;
 }
@@ -396,5 +365,57 @@ footer {
 @media (max-width: 600px) {
     .social-media {
         width: 40%;
+    }
+}
+
+#div{
+    background-color: #fff;
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    border-radius: 3px;
+    margin: 30px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+}
+
+#div2{
+    background-color: #fff;
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    border-radius: 3px;
+    margin: 30px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+}
+
+#div3{
+    background-color: #fff;
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    border-radius: 3px;
+    margin: 30px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+    text-align: center;
+}
+
+h2{
+    background-color: rgba(56, 96, 125, 0.8)
+}
+.respon {
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 600px){
+    .social-media {
+        width: 20%;
     }
 }
