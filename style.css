@@ -278,9 +278,7 @@
 }
 
 
-.card {
-    border-radius: 16px !important;
-}
+
 
 /* .card-img-top {
     width: 100% !important;
@@ -368,42 +366,6 @@ footer {
     }
 }
 
-#div{
-    background-color: #fff;
-    text-align: center;
-    border-color: black;
-    border-style: solid;
-    border-radius: 3px;
-    margin: 30px;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    width: 50%;
-}
-
-#div2{
-    background-color: #fff;
-    text-align: center;
-    border-color: black;
-    border-style: solid;
-    border-radius: 3px;
-    margin: 30px;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    width: 50%;
-}
-
-#div3{
-    background-color: #fff;
-    text-align: center;
-    border-color: black;
-    border-style: solid;
-    border-radius: 3px;
-    margin: 30px;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    width: 50%;
-    text-align: center;
-}
 
 h2{
     background-color: rgba(56, 96, 125, 0.8)

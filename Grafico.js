@@ -4,7 +4,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: [],
         datasets: [{
-            label: 'Monedas',
+            label: 'Venta',
             data: [],
             borderWidth: 1
             
