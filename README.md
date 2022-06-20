@@ -1,8 +1,7 @@
 # ITBANK_grupo2
 ## INTEGRANTES 
 - Pedraza Suray  
-- Saleme Juan Ignacio  
-- Pedro Soria  
+- Saleme Juan Ignacio    
 - Latorre Ignacio  
 - Catalina Groba  
 - Augusto manzone  
