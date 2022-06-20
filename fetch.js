@@ -1,89 +1,12 @@
 const currenciesAPI = 'https://www.dolarsi.com/api/api.php?type=valoresprincipales'
 
+
 const fetchCurrencies = (url, callback) => {
   fetch(url)
     .then((currencies) => currencies.json())
     .then((currencies) => {
-      /console.log(currencies);/
-      console.log(callback(currencies))
-
-      var currenciesFiltradas = callback(currencies);
-      console.log(currenciesFiltradas);
-
-      function armar(datos) {
-        const contenedor = document.getElementById("div")
-        const elemento1 = document.createElement("h2")
-        const elemento2 = document.createElement("h3")
-        const elemento3 = document.createElement("h3")
-        const elemento4 = document.createElement("h3")
-
-        //----------------------------------------------------//
-
-        const contenedor2 = document.getElementById("div2")
-        const elemento11 = document.createElement("h2")
-        const elemento22 = document.createElement("h3")
-        const elemento33 = document.createElement("h3")
-        const elemento44 = document.createElement("h3")
-
-        //-----------------------------------------------------------/
-
-        const contenedor3 = document.getElementById("div3")
-        const elemento111 = document.createElement("h2")
-        const elemento222 = document.createElement("h3")
-        const elemento333 = document.createElement("h3")
-        const elemento444 = document.createElement("h3")
-
-
-        currenciesFiltradas.forEach(element => {
-
-          elemento1.textContent = currenciesFiltradas[0].casa.nombre
-          contenedor.appendChild(elemento1)
-
-          elemento2.textContent = "Compra: " + "$" + currenciesFiltradas[0].casa.compra
-          contenedor.appendChild(elemento2)
-
-          elemento3.textContent = "Venta: " + "$" + currenciesFiltradas[0].casa.venta
-          contenedor.appendChild(elemento3)
-
-          elemento4.textContent = "Variación: " + "$" + currenciesFiltradas[0].casa.variacion
-          contenedor.appendChild(elemento4)
-
-          /* -----------------------------------------------------------*/
-
-          elemento11.textContent = currenciesFiltradas[1].casa.nombre
-          contenedor2.appendChild(elemento11)
-
-
-          elemento22.textContent = "Compra: " + "$" + currenciesFiltradas[1].casa.compra
-          contenedor2.appendChild(elemento22)
-
-
-          elemento33.textContent = "Venta: " + "$" + currenciesFiltradas[1].casa.venta
-          contenedor2.appendChild(elemento33)
-
-
-          elemento44.textContent = "Variación: " + "$" + currenciesFiltradas[1].casa.variacion
-          contenedor2.appendChild(elemento44)
-
-          /* -----------------------------------------------------------*/
-
-          elemento111.textContent = currenciesFiltradas[2].casa.nombre
-          contenedor3.appendChild(elemento111)
-
-
-          elemento222.textContent = "Compra: " + currenciesFiltradas[2].casa.compra
-          contenedor3.appendChild(elemento222)
-
-
-          elemento333.textContent = "Venta: " +"$" + currenciesFiltradas[2].casa.venta
-          contenedor3.appendChild(elemento333)
-
-
-          elemento444.textContent = "Variación: " + "$" + currenciesFiltradas[2].casa.variacion
-          contenedor3.appendChild(elemento444)
-
-        });
-      }
+      const currenciesFiltradas = callback(currencies);
+      
       armar(currenciesFiltradas);
     })
 };
@@ -95,4 +18,49 @@ const filterMainCurrencies = (currencies) => {
       currencie.casa.nombre == "Dolar turista"
   )
 };
+
 fetchCurrencies(currenciesAPI, filterMainCurrencies)
+
+function armar(datos) {
+  const contenedorToAppend = document.getElementById('cards-container')
+  contenedorToAppend.innerHTML = ''
+  // const fecha = document.createElement('p')
+  // fecha.textContent = Date.now()
+
+  // contenedorToAppend.appendChild(fecha)
+
+  datos.forEach(element => {
+
+    const col = document.createElement("div")
+    const contenedor = document.createElement("div")
+    const elemento1 = document.createElement("p")
+    const elemento2 = document.createElement("p")
+    const elemento3 = document.createElement("p")
+    const elemento4 = document.createElement("p")
+
+    col.classList='col'
+    col.appendChild(contenedor)
+
+    contenedor.classList='card mx-3 '
+    contenedor.style.width='18rem'
+
+
+    elemento1.classList='card-header h-30 d-inline-block  bg-success text-white bg-opacity-75'
+    elemento1.textContent = element.casa.nombre
+    contenedor.appendChild(elemento1)
+
+    elemento2.classList = 'card-body h-70 d-inline-block  bg-secondary bg-opacity-75 text-light'
+    elemento2.textContent = "Compra: " + "$" + element.casa.compra
+    contenedor.appendChild(elemento2)
+
+    elemento3.classList = 'card-3 h-5 d-inline-block  bg-light'
+    elemento3.textContent = "Venta: " + "$" + element.casa.venta
+    contenedor.appendChild(elemento3)
+
+    elemento4.classList = 'card-4 h-5 d-inline-block bg-success text-white bg-opacity-75 rounded-bottom'
+    elemento4.textContent = "Variación: " + "$" + element.casa.variacion
+    contenedor.appendChild(elemento4)
+    contenedorToAppend.appendChild(contenedor)
+
+  });
+}
